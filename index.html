@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Shipping Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Shipping Calculator</h1>
+
+      <div class="row">
+        <div id="column-one" class="col-md-4">
+          <h3>Select when you want your package to arrive:</h3>
+
+          <form id="package-calculation">
+            <div class="form-group">
+              <div class="radio"><label>
+                <input type="radio" name="optionsService" id="optionsService1" value="nextDay" checked>
+                  Next day delivery</label>
+              </div>
+              <div class="radio"><label>
+                <input type="radio" name="optionsService" id="optionsService2" value="2-day">
+                  2-day delivery</label>
+              </div>
+              <div class="radio"><label>
+                <input type="radio" name="optionsService" id="optionsService3" value="3-day">
+                  3-day delivery</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <h3>Choose the type of package you are shipping:</h3>
+              <div class="radio"><label>
+                <input type="radio" name="optionsPackages" id="optionsPackages4" value="envelope" checked>
+                  Envelope</label>
+              </div>
+              <div class="radio"><label>
+                <input type="radio" name="optionsPackages" id="optionsPackages5" value="small">
+                  Small Box</label>
+              </div>
+              <div class="radio"><label>
+                <input type="radio" name="optionsPackages" id="optionsPackages6" value="large">
+                  Large Box</label>
+              </div>
+            </div>
+            <button type="submit" name="submit-btn" id="submit-btn" class="btn btn-primary">Submit</button>
+          </form>
+
+        </div>
+
+        <div id="column-two" class="col-md-8">
+          <h3>Your calculated shipping cost:</h3>
+          <div id="final-cost"></div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
